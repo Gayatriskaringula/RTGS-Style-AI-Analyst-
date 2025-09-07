@@ -1,0 +1,258 @@
+{
+  "dataset_name": "pdata",
+  "timestamp": "2025-09-07T18:40:49.281007",
+  "original_shape": [
+    6856,
+    16
+  ],
+  "original_columns": [
+    "DDate",
+    "AmcCode",
+    "AmcName",
+    "YardCode",
+    "YardName",
+    "CommCode",
+    "CommName",
+    "VarityCode",
+    "VarityName",
+    "ProgArrivals",
+    "Arrivals",
+    "Minimum",
+    "Maximum",
+    "Model",
+    "Valuation",
+    "MarketFee"
+  ],
+  "original_dtypes": {
+    "DDate": "object",
+    "AmcCode": "int64",
+    "AmcName": "object",
+    "YardCode": "int64",
+    "YardName": "object",
+    "CommCode": "int64",
+    "CommName": "object",
+    "VarityCode": "int64",
+    "VarityName": "object",
+    "ProgArrivals": "float64",
+    "Arrivals": "float64",
+    "Minimum": "float64",
+    "Maximum": "float64",
+    "Model": "float64",
+    "Valuation": "float64",
+    "MarketFee": "float64"
+  },
+  "steps": [
+    {
+      "step": "column_name_standardization",
+      "description": "Converted column names to snake_case format",
+      "columns_changed": 16
+    },
+    {
+      "step": "data_type_standardization",
+      "description": "Converted data types based on content analysis",
+      "types_converted": 1
+    },
+    {
+      "step": "text_data_standardization",
+      "description": "Standardized text data formatting",
+      "columns_processed": 4
+    },
+    {
+      "step": "numeric_data_standardization",
+      "description": "Standardized numeric data formats",
+      "columns_processed": 6
+    },
+    {
+      "step": "datetime_standardization",
+      "description": "Standardized datetime formats and added derived columns",
+      "columns_processed": 0
+    },
+    {
+      "step": "categorical_data_standardization",
+      "description": "Standardized categorical values for consistency",
+      "columns_processed": 4
+    }
+  ],
+  "final_shape": [
+    6856,
+    16
+  ],
+  "final_columns": [
+    "ddate",
+    "amccode",
+    "amcname",
+    "yardcode",
+    "yardname",
+    "commcode",
+    "commname",
+    "varitycode",
+    "varityname",
+    "progarrivals",
+    "arrivals",
+    "minimum",
+    "maximum",
+    "model",
+    "valuation",
+    "marketfee"
+  ],
+  "final_dtypes": {
+    "ddate": "datetime64[ns, UTC+05:30]",
+    "amccode": "int64",
+    "amcname": "object",
+    "yardcode": "int64",
+    "yardname": "object",
+    "commcode": "int64",
+    "commname": "object",
+    "varitycode": "int64",
+    "varityname": "object",
+    "progarrivals": "Int64",
+    "arrivals": "float64",
+    "minimum": "Int64",
+    "maximum": "Int64",
+    "model": "Int64",
+    "valuation": "Int64",
+    "marketfee": "Int64"
+  },
+  "column_mapping": {
+    "DDate": "ddate",
+    "AmcCode": "amccode",
+    "AmcName": "amcname",
+    "YardCode": "yardcode",
+    "YardName": "yardname",
+    "CommCode": "commcode",
+    "CommName": "commname",
+    "VarityCode": "varitycode",
+    "VarityName": "varityname",
+    "ProgArrivals": "progarrivals",
+    "Arrivals": "arrivals",
+    "Minimum": "minimum",
+    "Maximum": "maximum",
+    "Model": "model",
+    "Valuation": "valuation",
+    "MarketFee": "marketfee"
+  },
+  "type_conversions": {
+    "ddate": "object \u2192 datetime64[ns]"
+  },
+  "text_standardizations": {
+    "amcname": [
+      "whitespace_stripped",
+      "empty_strings_to_nan",
+      "encoding_fixes"
+    ],
+    "yardname": [
+      "whitespace_stripped",
+      "empty_strings_to_nan",
+      "encoding_fixes"
+    ],
+    "commname": [
+      "whitespace_stripped",
+      "empty_strings_to_nan",
+      "encoding_fixes"
+    ],
+    "varityname": [
+      "whitespace_stripped",
+      "empty_strings_to_nan",
+      "encoding_fixes"
+    ]
+  },
+  "numeric_standardizations": {
+    "progarrivals": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    "minimum": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 85000.0,
+        "mean": 2712.130105017503
+      }
+    },
+    "maximum": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 233300.0,
+        "mean": 4199.844078179696
+      }
+    },
+    "model": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 18001800.0,
+        "mean": 6079.77829638273
+      }
+    },
+    "valuation": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    },
+    "marketfee": {
+      "changes": [
+        "converted_float_to_int"
+      ],
+      "original_stats": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      }
+    }
+  },
+  "date_standardizations": {},
+  "categorical_standardizations": {
+    "amcname": {
+      "changes": [
+        "converted_to_title_case",
+        "normalized_spaces"
+      ],
+      "original_unique_count": 45,
+      "final_unique_count": 45
+    },
+    "yardname": {
+      "changes": [
+        "converted_to_title_case",
+        "normalized_spaces"
+      ],
+      "original_unique_count": 49,
+      "final_unique_count": 49
+    },
+    "commname": {
+      "changes": [
+        "converted_to_title_case",
+        "normalized_spaces"
+      ],
+      "original_unique_count": 86,
+      "final_unique_count": 86
+    },
+    "varityname": {
+      "changes": [
+        "converted_to_title_case",
+        "standardized_1_to_Yes",
+        "standardized_0_to_No",
+        "normalized_spaces"
+      ],
+      "original_unique_count": 53,
+      "final_unique_count": 52
+    }
+  }
+}

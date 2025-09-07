@@ -1,0 +1,88 @@
+{
+  "dataset_name": "pdata",
+  "source_file": "C:\\Users\\Admin\\Desktop\\rtgs\\day_prices_between.csv",
+  "ingestion_timestamp": "2025-09-07T14:34:05.422816",
+  "file_checksum": "32bb545d12a1b9a3a23a4bb823042532",
+  "raw_file_path": "data\\raw\\pdata_raw.csv",
+  "load_metadata": {
+    "file_extension": ".csv",
+    "file_size_bytes": 811588,
+    "file_size_mb": 0.7739906311035156,
+    "loading_strategy": "Strategy 1: {'encoding': 'utf-8', 'sep': ','}",
+    "status": "success",
+    "rows_loaded": 6856,
+    "columns_loaded": 16
+  },
+  "validation_results": {
+    "timestamp": "2025-09-07T14:34:05.284093",
+    "checks_performed": [
+      "empty_check",
+      "size_check",
+      "column_names_check",
+      "data_quality_check",
+      "memory_check",
+      "dtype_check",
+      "issues_detection"
+    ],
+    "warnings": [],
+    "errors": [],
+    "data_quality": {
+      "total_cells": 109696,
+      "null_cells": 0,
+      "null_percentage": 0.0,
+      "completeness": 100.0
+    },
+    "data_type_distribution": {
+      "float64": 7,
+      "object": 5,
+      "int64": 4
+    },
+    "potential_issues": {
+      "mixed_types": [],
+      "suspicious_nulls": [],
+      "encoding_issues": [],
+      "numeric_as_text": []
+    }
+  },
+  "initial_shape": [
+    6856,
+    16
+  ],
+  "columns": [
+    "DDate",
+    "AmcCode",
+    "AmcName",
+    "YardCode",
+    "YardName",
+    "CommCode",
+    "CommName",
+    "VarityCode",
+    "VarityName",
+    "ProgArrivals",
+    "Arrivals",
+    "Minimum",
+    "Maximum",
+    "Model",
+    "Valuation",
+    "MarketFee"
+  ],
+  "dtypes": {
+    "DDate": "object",
+    "AmcCode": "int64",
+    "AmcName": "object",
+    "YardCode": "int64",
+    "YardName": "object",
+    "CommCode": "int64",
+    "CommName": "object",
+    "VarityCode": "int64",
+    "VarityName": "object",
+    "ProgArrivals": "float64",
+    "Arrivals": "float64",
+    "Minimum": "float64",
+    "Maximum": "float64",
+    "Model": "float64",
+    "Valuation": "float64",
+    "MarketFee": "float64"
+  },
+  "memory_usage_mb": 2.573516845703125
+}

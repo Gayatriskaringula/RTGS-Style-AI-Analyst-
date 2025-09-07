@@ -1,0 +1,17 @@
+{
+  "dataset_name": "pdata",
+  "timestamp": "2025-09-07T18:51:07.853770",
+  "original_shape": [
+    6856,
+    16
+  ],
+  "steps": [
+    "Capped 3893 outliers using IQR method"
+  ],
+  "final_shape": [
+    6856,
+    16
+  ],
+  "rows_removed": 0,
+  "cols_removed": 0
+}

@@ -1,0 +1,107 @@
+RTGS Analysis Report - pdata
+============================================================
+Generated: 2025-09-07T21:19:08.557611
+
+Dataset Overview:
+- Total Records: 6,856
+- Total Columns: 53
+- Numeric Columns: 48
+- Categorical Columns: 5
+
+VISUALIZATIONS:
+
+amccode Histogram:
+======================================================================
+ 207.5-223.4 |████                                               302
+ 223.4-239.4 |█                                                  94
+ 239.4-255.3 |██████████████                                     1090
+ 255.3-271.3 |█                                                  93
+ 271.3-287.2 |██                                                 212
+ 287.2-303.2 |█                                                  147
+ 303.2-319.1 |███                                                290
+ 319.1-335.1 |██████████████████████████████████████████████████ 3742
+ 335.1-351.0 |                                                   0
+ 351.0-367.0 |███████████                                        886
+======================================================================
+
+
+yardcode Histogram:
+======================================================================
+   1.0-162.1 |██████████████████████████████████████████████████ 3465
+ 162.1-323.2 |                                                   0
+ 323.2-484.3 |                                                   0
+ 484.3-645.4 |                                                   0
+ 645.4-806.5 |                                                   0
+ 806.5-967.6 |██████████████                                     1039
+967.6-1128.7 |█████                                              415
+1128.7-1289.8 |███                                                223
+1289.8-1450.9 |████                                               335
+1450.9-1612.0 |███████████████████                                1379
+======================================================================
+
+
+commcode Histogram:
+======================================================================
+   18.0-34.8 |████████████████████                               914
+   34.8-51.6 |                                                   1
+   51.6-68.4 |█████████████                                      577
+   68.4-85.2 |████████                                           393
+  85.2-102.0 |████████████████                                   733
+ 102.0-118.8 |██████████████████████████████████████████████████ 2211
+ 118.8-135.6 |█████████████████████████                          1143
+ 135.6-152.4 |█                                                  77
+ 152.4-169.2 |█████                                              228
+ 169.2-186.0 |█████████████                                      579
+======================================================================
+
+
+Correlation Heatmap:
+============================================================
+           amccodeyardcodecommcodevaritycoprogarriarrivals
+   amccode      ██              ▓▓      ▽▽              ░░  amccode
+  yardcode              ██      ▽▽                      ▽▽  yardcode
+  commcode      ▓▓      ▽▽      ██                          commcode
+varitycode      ▽▽                      ██                  varitycode
+progarriva                                                  progarriva
+  arrivals      ░░      ▽▽                              ██  arrivals
+
+Legend: ██ Strong(>0.7) ▓▓ Moderate(>0.4) ░░ Weak(>0.2) ▼▼ Negative
+============================================================
+
+
+AI INSIGHTS:
+----------------------------------------
+Data Insights:
+ 1. Key Patterns:
+   - The 'amccode', 'yardcode', and 'varitycode' show a consistent increase in values, suggesting an expansion or diversification of operations over time. However, the 'commcode' remains relatively stable, indicating potential consistency in the number of committees or departments.
+   - The 'progarrivals' column is constant at 0, suggesting no new program arrivals during the dataset period.
+
+2. Data Quality:
+   - The data appears to be complete with minimal missing values across all columns, indicating good data collection practices. However, the standard deviations for some numerical variables are quite high, which could indicate inconsistencies in data entry or measurement.
+
+3. Notable Trends:
+   - The 'ddate' column shows a range of dates, suggesting that the dataset spans multiple years. This could be useful for policymakers to analyze trends over time.
+   - The 'amcname', 'yardname' columns have a large number of unique values, indicating a diverse set of entities involved in these operations.
+
+4. Statistical Insights:
+   - The mean values for 'amccode', 'yardcode', and 'varitycode' are significantly higher than their minimum values, suggesting that the majority of entities have larger operational units or more diverse product offerings. This could be a key area for policymakers to focus on for resource allocation or regulatory oversight.
+   - The 'progarrivals' column being constant at 0 indicates no new programs, which might suggest a matured system with minimal growth or innovation. Policymakers may consider incentives to encourage the introduction of new programs.
+
+Governance Recommendations:
+ 1. Immediate Actions:
+   - Conduct a comprehensive review of the amcname and yardname categories to identify overlaps or inconsistencies in the management of agricultural markets and yards. This could lead to streamlining processes, reducing redundancies, and improving efficiency.
+
+2. Resource Allocation:
+   - Analyze the relationship between amccode, yardcode, commcode, and varietycode to identify areas where resources might be better allocated. For instance, if certain combinations of these codes consistently lead to higher yields or sales, prioritize those areas with increased funding and support.
+
+3. Performance Improvements:
+   - Implement a system to track progarrivals (currently all zeros) to monitor the inflow of produce into markets. This data can help in forecasting demand, preventing surpluses or shortages, and improving market stability.
+
+4. Monitoring Priorities:
+   - Regularly track yardcode, commcode, and varietycode to assess the diversity and productivity of crops being handled in agricultural markets. This information can inform decisions about crop subsidies, pest control programs, and agricultural extension services.
+   - Keep a close eye on amccode as it represents different administrative units. Monitoring this data can help identify trends or issues specific to certain regions, allowing for targeted interventions.
+   - Regularly review ddate to ensure timely reporting of data and to identify any potential delays or inconsistencies in the collection process.
+
+KEY FINDINGS:
+• Found 47 strong correlations between variables
+• AI-powered insights generated successfully

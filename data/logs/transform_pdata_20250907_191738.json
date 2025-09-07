@@ -1,0 +1,70 @@
+{
+  "dataset_name": "pdata",
+  "timestamp": "2025-09-07T19:17:37.692597",
+  "original_shape": [
+    6856,
+    16
+  ],
+  "config": {
+    "create_features": true,
+    "encode_categorical": true,
+    "scale_numeric": true,
+    "handle_dates": true
+  },
+  "steps": [
+    "Extracted features from 1 date columns",
+    "Created 7 new features",
+    "Kept commname as-is (high cardinality: 86)",
+    "Kept varityname as-is (high cardinality: 52)",
+    "Encoded 2 categorical columns",
+    "Scaled 24 numeric columns"
+  ],
+  "new_features": [
+    "ddate_year",
+    "ddate_month",
+    "ddate_day",
+    "ddate_weekday",
+    "amccode_to_yardcode_ratio",
+    "amccode_to_commcode_ratio",
+    "amccode_to_varitycode_ratio",
+    "amccode_to_arrivals_ratio",
+    "amccode_to_ddate_year_ratio",
+    "amcname_frequency",
+    "yardname_frequency"
+  ],
+  "encoded_columns": [
+    "amcname (label)",
+    "yardname (label)"
+  ],
+  "scaled_columns": [
+    "amccode",
+    "yardcode",
+    "commcode",
+    "varitycode",
+    "progarrivals",
+    "arrivals",
+    "minimum",
+    "maximum",
+    "model",
+    "valuation",
+    "marketfee",
+    "ddate_year",
+    "ddate_month",
+    "ddate_day",
+    "ddate_weekday",
+    "amccode_to_yardcode_ratio",
+    "amccode_to_commcode_ratio",
+    "amccode_to_varitycode_ratio",
+    "amccode_to_arrivals_ratio",
+    "amccode_to_ddate_year_ratio",
+    "amcname_frequency",
+    "yardname_frequency",
+    "amcname_encoded",
+    "yardname_encoded"
+  ],
+  "final_shape": [
+    6856,
+    53
+  ],
+  "features_added": 37
+}
